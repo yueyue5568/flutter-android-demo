@@ -37,12 +37,13 @@ class TeamAndroidHomePage extends StatelessWidget {
   ];
 
   static const List<String> androidTasks = [
-    '选择一台主运行电脑和一台 Android 手机',
-    '使用教师下载页或组内互拷准备 Flutter / Android 工具',
-    '打开手机开发者选项与 USB 调试',
-    '使用 adb devices 确认设备状态为 device',
-    '使用 flutter doctor 和 flutter devices 检查环境',
-    '使用 flutter run 在真实手机上运行应用',
+    '选择杨顺粉的电脑作为主运行电脑，Android手机作为真机运行设备',
+    '从企业微信群下载 platform-tools 工具包并解压配置 ADB',
+    '在Android手机上打开开发者选项并开启 USB 调试',
+    '使用 adb devices 确认设备连接状态为 device',
+    '执行 flutter doctor 和 flutter devices 检查开发环境',
+    '使用 flutter run 在真实手机上成功运行 Flutter 应用',
+
   ];
 
   static const List<String> evidenceNotes = [
