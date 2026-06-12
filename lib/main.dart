@@ -39,12 +39,22 @@ class TeamAndroidHomePage extends StatelessWidget {
   ];
 
   static const List<String> androidTasks = [
-     '选择杨顺粉的电脑作为主运行电脑，Android手机作为真机运行设备',
-    '从微信群下载 platform-tools 工具包并解压配置 ADB',
-    '在Android手机上打开开发者选项并开启 USB 调试',
-    '使用 adb devices 确认设备连接状态为 device',
-    '执行 flutter doctor 和 flutter devices 检查开发环境',
-    '使用 flutter run 在真实手机上成功运行 Flutter 应用',
+      '确定主运行电脑为Windows 系统电脑，主运行手机为Android 手机',
+    '从企业微信群下载 platform-tools-latest-windows 工具包并解压配置 ADB 环境',
+    '确认项目路径为英文短路径，避免中文、空格或特殊符号导致构建失败',
+    '配置清华 Flutter 镜像（FLUTTER_STORAGE_BASE_URL）和 Dart Pub 镜像（PUB_HOSTED_URL）加速依赖下载',
+    '运行 flutter doctor -v 检查 Flutter 与 Android 开发环境是否完整就绪',
+    '通过 Android Studio SDK Manager 安装 Android SDK Platform、Build-Tools、Platform-Tools 及 Command-line Tools',
+    '运行 flutter doctor --android-licenses 连续输入 y 接受所有 Android 许可协议直到结束',
+    '在华为手机上进入设置→关于手机→连续点击版本号 7 次，激活开发者选项',
+    '返回设置→更多设置→开发者选项→开启 USB 调试开关',
+    '用数据线连接手机与电脑，手机端选择"文件传输/MTP"模式，解锁手机并点击允许 USB 调试授权',
+    '运行 adb devices 确认设备连接状态显示为 device（非 unauthorized 或 offline）',
+    '运行 flutter devices 确认 Flutter 已识别到 Android 设备',
+    '进入项目根目录运行 flutter pub get 下载 Dart/Flutter 项目依赖包',
+    '运行 flutter test 确认所有单元测试通过',
+    '运行 flutter run 将 Flutter 应用编译并安装到华为手机上启动运行',
+    '确认手机屏幕正确显示本小组的 Flutter 应用界面及小组信息',
   ];
 
   static const List<String> evidenceNotes = [
